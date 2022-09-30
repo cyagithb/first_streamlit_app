@@ -23,7 +23,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 streamlit.header("Fruityvice Fruit Advice!")
-streamlit.text(fruityvice_response.json())
+#Comment out raw json
+#streamlit.text(fruityvice_response.json())
 
 # Convert json to readable list 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
